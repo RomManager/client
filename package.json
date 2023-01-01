@@ -1,7 +1,8 @@
 {
   "name": "rom-manager",
   "version": "0.1.0",
-  "description": "",
+  "author": "Valentin Zwerschke",
+  "description": "Client for RomManager",
   "main": ".webpack/main",
   "scripts": {
     "start": "cross-env NODE_ENV=development electron-forge start",
@@ -14,7 +15,6 @@
     "forge": "./tools/forge/forge.config.js"
   },
   "keywords": [],
-  "author": "",
   "license": "ISC",
   "devDependencies": {
     "@electron-forge/cli": "^6.0.4",
