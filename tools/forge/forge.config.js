@@ -1,6 +1,6 @@
 // Forge Configuration
-const path = require("path");
-const rootDir = process.cwd();
+const path = require('path')
+const rootDir = process.cwd()
 
 module.exports = {
   // Packager Config
@@ -10,9 +10,9 @@ module.exports = {
     // Set executable name
     executableName: "rom-manager",
     // Set application copyright
-    appCopyright: "Copyright (C) 2023 Valentin Zwerschke",
+    appCopyright: 'Copyright (C) 2023 Valentin Zwerschke',
     // Set application icon
-    icon: path.resolve("assets/images/appIcon.ico"),
+    icon: path.resolve('assets/images/appIcon.ico'),
   },
   // Forge Makers
   makers: [
@@ -50,7 +50,7 @@ module.exports = {
   // Forge Plugins
   plugins: [
     {
-      name: "@electron-forge/plugin-webpack",
+      name: '@electron-forge/plugin-webpack',
       config: {
         // Fix content-security-policy error when image or video src isn't same origin
         // Remove 'unsafe-eval' to get rid of console warning in development mode.
@@ -59,26 +59,26 @@ module.exports = {
         port: 3000, // Webpack Dev Server port
         loggerPort: 9000, // Logger port
         // Main process webpack configuration
-        mainConfig: path.join(rootDir, "tools/webpack/webpack.main.js"),
+        mainConfig: path.join(rootDir, 'tools/webpack/webpack.main.js'),
         // Renderer process webpack configuration
         renderer: {
           // Configuration file path
-          config: path.join(rootDir, "tools/webpack/webpack.renderer.js"),
+          config: path.join(rootDir, 'tools/webpack/webpack.renderer.js'),
           // Entrypoints of the application
           entryPoints: [
             {
               // Window process name
-              name: "app_window",
+              name: 'app_window',
               // React Hot Module Replacement (HMR)
-              rhmr: "react-hot-loader/patch",
+              rhmr: 'react-hot-loader/patch',
               // HTML index file template
-              html: path.join(rootDir, "src/renderer/app.html"),
+              html: path.join(rootDir, 'src/renderer/app.html'),
               // Renderer
-              js: path.join(rootDir, "src/renderer/appRenderer.tsx"),
+              js: path.join(rootDir, 'src/renderer/appRenderer.tsx'),
               // Main Window
               // Preload
               preload: {
-                js: path.join(rootDir, "src/renderer/appPreload.tsx"),
+                js: path.join(rootDir, 'src/renderer/appPreload.tsx'),
               },
             },
           ],
@@ -89,4 +89,4 @@ module.exports = {
       },
     },
   ],
-};
+}

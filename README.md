@@ -1,5 +1,12 @@
 ## Client
 
+To use pre commit prettier check etc:
+
+```
+npm i
+npm run prepare
+```
+
 ### Code style conventions
 
 -- to be improved --
@@ -33,10 +40,3 @@ export class Statistics {
 ```
 
 Will be using `pnpm`
-
-To use pre commit prettier check etc:
-
-```
-npm i
-npm run prepare
-```
