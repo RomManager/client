@@ -1,5 +1,6 @@
-node_modules/
-.webpack/
+node_modules
+.webpack
+out
 
 # Because we use pnpm
 package-lock.json
