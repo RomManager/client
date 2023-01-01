@@ -37,13 +37,13 @@ module.exports = {
       name: "@electron-forge/maker-deb",
       config: {
         maintainer: "Pavel Zwerschke",
-        homepage: "https://github.com/RomManager/client",
+        homepage: "https://github.com/RomManager",
       },
     },
     {
       name: "@electron-forge/maker-rpm",
       config: {
-        homepage: "https://github.com/RomManager/client",
+        homepage: "https://github.com/RomManager",
       },
     },
   ],
