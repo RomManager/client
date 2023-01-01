@@ -8,9 +8,9 @@ console.log('[RomManager] : Renderer execution started')
 
 // Application to Render
 const app = (
-    <WindowFrame title="Rom Manager" platform="windows">
-        <Application />
-    </WindowFrame>
+  <WindowFrame title="Rom Manager" platform="windows">
+    <Application />
+  </WindowFrame>
 )
 
 // Render application in DOM

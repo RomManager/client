@@ -4,7 +4,7 @@ const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin'
 const { inDev } = require('./webpack.helpers')
 
 module.exports = [
-    new ForkTsCheckerWebpackPlugin(),
-    inDev() && new webpack.HotModuleReplacementPlugin(),
-    inDev() && new ReactRefreshWebpackPlugin(),
+  new ForkTsCheckerWebpackPlugin(),
+  inDev() && new webpack.HotModuleReplacementPlugin(),
+  inDev() && new ReactRefreshWebpackPlugin(),
 ].filter(Boolean)

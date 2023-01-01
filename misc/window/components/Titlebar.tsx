@@ -5,18 +5,18 @@
 import React from 'react'
 // import titlebarMenus from "../titlebarMenus";
 import context from '../titlebarContextApi'
-//import { WindowContext } from "./WindowFrame";
+// import { WindowContext } from "./WindowFrame";
 
 const Titlebar: React.FC = () => {
-    const execTest = () => {
-        context.exit()
-    }
+  const execTest = () => {
+    context.exit()
+  }
 
-    return (
-        <div>
-            <button onClick={() => execTest()}>Exit test</button>
-        </div>
-    )
+  return (
+    <div>
+      <button onClick={() => execTest()}>Exit test</button>
+    </div>
+  )
 }
 
 export default Titlebar
