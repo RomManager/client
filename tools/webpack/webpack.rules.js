@@ -1,3 +1,5 @@
+const path = require('path')
+
 module.exports = [
   {
     // Add support for native node modules
@@ -26,9 +28,8 @@ module.exports = [
     },
   },
   {
-    // CSS Loader
-    test: /\.css$/,
-    use: [{ loader: 'style-loader' }, { loader: 'css-loader' }],
+    test: /\.css$/i,
+    use: ['style-loader', 'css-loader', 'postcss-loader'],
   },
   {
     // Assets loader
