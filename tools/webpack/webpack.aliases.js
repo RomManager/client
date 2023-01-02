@@ -9,4 +9,5 @@ module.exports = createWebpackAliases({
   '@renderer': 'src/renderer',
   '@src': 'src',
   '@misc': 'misc',
+  '@state': 'src/renderer/state',
 })

@@ -2,16 +2,16 @@
 import React from 'react'
 import logo from '@assets/icons/electron-logo.png'
 
-import { useAppSelector, useAppDispatch } from '../redux/hooks'
+import { useAppSelector, useAppDispatch } from '@state/hooks'
 
 import {
   decrement,
   increment,
   incrementByAmount,
   selectCount,
-} from '../redux/counter/counterSlice'
+} from '@state/slicers/counterSlice'
 
-const Application: React.FC = () => {
+const Welcome: React.FC = () => {
   // The `state` arg is correctly typed as `RootState` already
   const count = useAppSelector(selectCount)
   const dispatch = useAppDispatch()
@@ -46,4 +46,4 @@ const Application: React.FC = () => {
   )
 }
 
-export default Application
+export default Welcome

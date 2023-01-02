@@ -19,7 +19,8 @@
       "@main/*": ["./src/main/*"],
       "@renderer/*": ["./src/renderer/*"],
       "@src/*": ["./src/*"],
-      "@misc/*": ["./misc/*"]
+      "@misc/*": ["./misc/*"],
+      "@state/*": ["./src/renderer/state/*"]
     }
   },
   "include": ["src/**/*", "tools/**/*", "tools/postcss/postcss.config.js"]

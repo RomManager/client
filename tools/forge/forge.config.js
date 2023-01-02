@@ -72,7 +72,7 @@ module.exports = {
               // React Hot Module Replacement (HMR)
               rhmr: 'react-hot-loader/patch',
               // HTML index file template
-              html: path.join(rootDir, 'src/renderer/app.html'),
+              html: path.join(rootDir, 'src/renderer/index.html'),
               // Renderer
               js: path.join(rootDir, 'src/renderer/appRenderer.tsx'),
               // Main Window
