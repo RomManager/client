@@ -20,7 +20,8 @@
       "@renderer/*": ["./src/renderer/*"],
       "@src/*": ["./src/*"],
       "@misc/*": ["./misc/*"],
-      "@state/*": ["./src/renderer/state/*"]
+      "@state/*": ["./src/renderer/state/*"],
+      "@pages/*": ["./src/renderer/pages/*"]
     }
   },
   "include": ["src/**/*", "tools/**/*", "tools/postcss/postcss.config.js"]
