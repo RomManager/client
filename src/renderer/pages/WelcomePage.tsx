@@ -11,7 +11,9 @@ import {
   selectCount,
 } from '@state/slicers/counterSlice'
 
-const Welcome: React.FC = () => {
+import { Link } from 'react-router-dom'
+
+const WelcomePage: React.FC = () => {
   // The `state` arg is correctly typed as `RootState` already
   const count = useAppSelector(selectCount)
   const dispatch = useAppDispatch()
@@ -42,8 +44,10 @@ const Welcome: React.FC = () => {
         Increment by amount: 2
       </button>
       <img src={logo} style={{ width: 100 }} />
+
+      <Link to="/test">Go to test page</Link>
     </div>
   )
 }
 
-export default Welcome
+export default WelcomePage
