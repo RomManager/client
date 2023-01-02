@@ -8,19 +8,19 @@
     "esModuleInterop": true,
     "noImplicitAny": true,
     "sourceMap": true,
-    "baseUrl": ".",
     "outDir": "dist",
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "paths": {
-      "*": ["node_modules/*"],
+      "*": ["./node_modules/*"],
       "@assets/*": ["./assets/*"],
       "@components/*": ["./src/renderer/components/*"],
       "@common/*": ["./src/common/*"],
       "@main/*": ["./src/main/*"],
       "@renderer/*": ["./src/renderer/*"],
       "@src/*": ["./src/*"],
-      "@misc/*": ["./misc/*"]
+      "@misc/*": ["./misc/*"],
+      "@state/*": ["./src/renderer/state/*"]
     }
   },
   "include": ["src/**/*", "tools/**/*", "tools/postcss/postcss.config.js"]
