@@ -3,6 +3,9 @@ import { createRoot } from 'react-dom/client'
 import WindowFrame from '@misc/window/components/WindowFrame'
 import Application from '@components/Application'
 import './App.css'
+import { Provider } from 'react-redux'
+
+import { store } from './redux/store'
 
 // Say something
 console.log('[RomManager] : Renderer execution started')
@@ -10,7 +13,9 @@ console.log('[RomManager] : Renderer execution started')
 // Application to Render
 const app = (
   <WindowFrame title="Rom Manager" platform="windows">
-    <Application />
+    <Provider store={store}>
+      <Application />
+    </Provider>
   </WindowFrame>
 )
 
