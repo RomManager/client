@@ -20,7 +20,7 @@ const WelcomePage: React.FC = () => {
 
   return (
     <div>
-      <h1 className="text-3xl font-bold text-red-400 pb-5">
+      <h1 className="text-3xl font-bold font-sans text-blue-4 pb-5">
         Welcome to the RM Client
       </h1>
       <span>Count: {count}</span>
@@ -46,6 +46,8 @@ const WelcomePage: React.FC = () => {
       <img src={logo} style={{ width: 100 }} />
 
       <Link to="/test">Go to test page</Link>
+      <br />
+      <Link to="/login">Go to login page</Link>
     </div>
   )
 }

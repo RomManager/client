@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client'
 import WindowFrame from '@misc/window/components/WindowFrame'
 import App from '@renderer/App'
 import './index.css'
+import './fonts.css'
 
 // Say something
 console.log('[RomManager] : Renderer execution started')

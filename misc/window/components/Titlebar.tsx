@@ -12,13 +12,7 @@ const Titlebar: React.FC = () => {
     context.exit()
   }
 
-  return (
-    <div>
-      <button onClick={() => execTest()} className="bg-red-300 p-1">
-        Exit test
-      </button>
-    </div>
-  )
+  return <div></div>
 }
 
 export default Titlebar
