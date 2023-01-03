@@ -2,6 +2,9 @@ import { app, BrowserWindow } from 'electron'
 import path from 'path'
 import { registerTitlebarIpc } from '@misc/window/titlebarIPC'
 
+// Devtools extensions
+import installExtension, { REDUX_DEVTOOLS } from 'electron-devtools-installer'
+
 // Electron Forge automatically creates these entry points
 declare const APP_WINDOW_WEBPACK_ENTRY: string
 declare const APP_WINDOW_PRELOAD_WEBPACK_ENTRY: string
@@ -31,6 +34,12 @@ export function createAppWindow(): BrowserWindow {
       sandbox: false,
     },
   })
+
+  // TODO: Add check if production?
+  // Install devtools
+  installExtension(REDUX_DEVTOOLS)
+    .then(name => console.log(`Added Extension:  ${name}`))
+    .catch(err => console.log('An error occurred: ', err))
 
   // Load the index.html of the app window.
   appWindow.loadURL(APP_WINDOW_WEBPACK_ENTRY)
