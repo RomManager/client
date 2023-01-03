@@ -38,8 +38,8 @@ export function createAppWindow(): BrowserWindow {
   // TODO: Add check if production?
   // Install devtools
   installExtension(REDUX_DEVTOOLS)
-    .then(name => console.log(`Added Extension:  ${name}`))
-    .catch(err => console.log('An error occurred: ', err))
+    .then((name: unknown) => console.log(`Added Extension:  ${name}`))
+    .catch((err: unknown) => console.log('An error occurred: ', err))
 
   // Load the index.html of the app window.
   appWindow.loadURL(APP_WINDOW_WEBPACK_ENTRY)
