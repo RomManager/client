@@ -46,13 +46,13 @@ module.exports = {
           9: '#97b8d9',
           10: '#a9c4e0',
         },
-        boxShadow: {
-          strong: '0 22px 70px 4px rgba(0, 0, 0, 0.35)',
-        },
-        fontFamily: {
-          sans: ['Raleway'],
-          //   ...defaultTheme.fontFamily.sans
-        },
+      },
+      boxShadow: {
+        strong: '0 22px 70px 4px rgba(0, 0, 0, 0.35)',
+      },
+      fontFamily: {
+        sans: ['Nunito Sans', ...defaultTheme.fontFamily.sans],
+        valle: ['Nunito Sans'],
       },
     },
   },
