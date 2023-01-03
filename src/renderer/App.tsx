@@ -8,16 +8,18 @@ import { store } from '@state/store'
 import { HashRouter, Routes, Route } from 'react-router-dom'
 
 // Component
-import Welcome from '@pages/WelcomePage'
-import Test from '@pages/TestPage'
+import WelcomePage from '@pages/WelcomePage'
+import TestPage from '@pages/TestPage'
+import LoginPage from './pages/LoginPage'
 
 const Application: React.FC = () => {
   return (
     <Provider store={store}>
       <HashRouter>
         <Routes>
-          <Route path="/" element={<Welcome />} />
-          <Route path="/test" element={<Test />} />
+          <Route path="/" element={<WelcomePage />} />
+          <Route path="/test" element={<TestPage />} />
+          <Route path="/login" element={<LoginPage />} />
         </Routes>
       </HashRouter>
     </Provider>
