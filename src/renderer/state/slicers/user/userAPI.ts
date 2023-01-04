@@ -6,7 +6,7 @@ export async function loginAPICall({
 }: {
   email: string
   password: string
-}) {
+}): Promise<boolean | string> {
   try {
     const { data, status } = await axios.post<{ token: string }>('/login', {
       email: email,

@@ -55,7 +55,8 @@ export const userSlice = createSlice({
 export const { setAuthenticatedFalse } = userSlice.actions
 
 // Other code such as selectors can use the imported `RootState` type
-export const selectCount = (state: RootState) => state.user.authenticated
+export const selectAuthenticated = (state: RootState) =>
+  state.user.authenticated
 export const selectDataStatus = (state: RootState) => state.user.status
 export const selectLoginError = (state: RootState) => state.user.error
 

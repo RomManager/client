@@ -1,11 +1,25 @@
 import BoxButton from '@components/utils/BoxButton'
 import BoxInput from '@components/utils/BoxInput'
-import { useAppDispatch } from '@renderer/state/hooks'
-import { loginAsync } from '@renderer/state/slicers/user/userSlice'
-import React from 'react'
+import { useAppDispatch, useAppSelector } from '@renderer/state/hooks'
+import {
+  loginAsync,
+  selectAuthenticated,
+} from '@renderer/state/slicers/user/userSlice'
+import React, { useEffect } from 'react'
+import { useNavigate } from 'react-router'
 
 const LoginPage = () => {
   const dispatch = useAppDispatch()
+  const isAuthenticated = useAppSelector(selectAuthenticated)
+
+  const navigate = useNavigate()
+
+  useEffect(() => {
+    if (isAuthenticated) {
+      // If user is authenticated direcly move to the homepage
+      navigate('/')
+    }
+  }, [isAuthenticated, navigate])
 
   return (
     <div className="bg-gradient-to-tr from-blue-0 to-pink-0 h-screen place-content-center flex">
