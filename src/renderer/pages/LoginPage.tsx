@@ -1,8 +1,12 @@
 import BoxButton from '@components/utils/BoxButton'
 import BoxInput from '@components/utils/BoxInput'
+import { useAppDispatch } from '@renderer/state/hooks'
+import { loginAsync } from '@renderer/state/slicers/user/userSlice'
 import React from 'react'
 
 const LoginPage = () => {
+  const dispatch = useAppDispatch()
+
   return (
     <div className="bg-gradient-to-tr from-blue-0 to-pink-0 h-screen place-content-center flex">
       <div className="bg-gray-1 py-6 pb-12 flex rounded-lg shadow-2xl flex-col h-64 mt-72">
@@ -17,7 +21,17 @@ const LoginPage = () => {
         </div>
         <a className="text-blue-10 text-xs pl-5 py-3">Forgot your password?</a>
         <div className="mt-3 place-content-center grid">
-          <BoxButton text="Login" />
+          <BoxButton
+            text="Login"
+            onClick={() => {
+              dispatch(
+                loginAsync({
+                  email: 'valle@gmail.com',
+                  password: 'test',
+                })
+              )
+            }}
+          />
         </div>
       </div>
     </div>

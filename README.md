@@ -4,7 +4,6 @@ To use pre commit prettier check etc:
 
 ```
 npm i
-npm run prepare
 ```
 
 ### Code style conventions
