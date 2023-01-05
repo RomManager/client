@@ -26,7 +26,6 @@ const EntryListBox: React.FC = () => {
           <Item itemName="Test" />
         </div>
       )}
-
       <p>Test</p>
     </div>
   )
@@ -38,7 +37,7 @@ const Item: React.FC<{ itemName: string }> = ({ itemName }) => {
       <div className="text-xl text-gray-6 ">
         <IoBookmark />
       </div>
-      <span className="text-gray-8 font-sans text-base ml-2 mt-[-1px]">
+      <span className="text-gray-8 font-sans text-base ml-2 mt-[-1px] hover:cursor-pointer hover:text-gray-9">
         {itemName}
       </span>
     </div>
