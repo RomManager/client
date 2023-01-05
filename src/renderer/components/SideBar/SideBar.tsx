@@ -11,7 +11,14 @@ const SideBar: React.FC = () => {
       <div className="flex place-content-center mt-1">
         <BoxInput placeholder="Search" />
       </div>
-      <EntryListBox />
+      <EntryListBox
+        entryName="Emulator Galaxy"
+        itemList={[
+          { itemName: 'Discover' },
+          { itemName: 'Home' },
+          { itemName: 'Test' },
+        ]}
+      />
     </div>
   )
 }
