@@ -32,6 +32,7 @@ specifiers:
   fork-ts-checker-webpack-plugin: ^7.2.14
   husky: ^8.0.2
   lint-staged: ^13.1.0
+  lucide-react: 0.105.0-alpha.4
   node-loader: ^2.0.0
   postcss: ^8.4.20
   postcss-loader: ^7.0.2
@@ -55,6 +56,7 @@ specifiers:
 dependencies:
   axios: 1.2.2
   electron-squirrel-startup: 1.0.0
+  lucide-react: 0.105.0-alpha.4_react@18.2.0
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   react-router: 6.6.1_react@18.2.0
@@ -4644,6 +4646,14 @@ packages:
     resolution: {integrity: sha512-ysxwsnTKdAx96aTRdhDOCQfDgbHnt8SK0KY8SEjO0wHinhWOFTESbjVCMPbU1uGXg/ch4lifqx0wfjOawU2+WA==}
     engines: {node: '>=12'}
     dev: true
+
+  /lucide-react/0.105.0-alpha.4_react@18.2.0:
+    resolution: {integrity: sha512-QclWOzKYj7sDW33jTQK4enmxL1LmI2SHFqEEP56EWhvs4mmlbbFe6ALYcdcdGysNISNovEbH5WBHg8tN5DLn0w==}
+    peerDependencies:
+      react: ^16.5.1 || ^17.0.0 || ^18.0.0
+    dependencies:
+      react: 18.2.0
+    dev: false
 
   /lzma-native/8.0.6:
     resolution: {integrity: sha512-09xfg67mkL2Lz20PrrDeNYZxzeW7ADtpYFbwSQh9U8+76RIzx5QsJBMy8qikv3hbUPfpy6hqwxt6FcGK81g9AA==}

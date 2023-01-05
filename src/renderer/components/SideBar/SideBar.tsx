@@ -1,5 +1,6 @@
 import BoxInput from '@components/utils/BoxInput'
 import React from 'react'
+import EntryListBox from './EntryListBox'
 
 const SideBar: React.FC = () => {
   return (
@@ -10,6 +11,7 @@ const SideBar: React.FC = () => {
       <div className="flex place-content-center mt-1">
         <BoxInput placeholder="Search" />
       </div>
+      <EntryListBox />
     </div>
   )
 }
