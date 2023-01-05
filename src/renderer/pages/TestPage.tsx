@@ -1,11 +1,12 @@
+import SideBar from '@components/SideBar/SideBar'
+import GradientFullPageLite from '@components/pageTemplates/GradientFullPageLite'
 import React from 'react'
-
-import { Link } from 'react-router-dom'
 
 export default function TestPage() {
   return (
-    <div>
-      <Link to="/">Go Back</Link>
-    </div>
+    <GradientFullPageLite>
+      <SideBar />
+      <p>Test</p>
+    </GradientFullPageLite>
   )
 }
