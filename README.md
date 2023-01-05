@@ -39,3 +39,5 @@ export class Statistics {
 ```
 
 Will be using `pnpm`
+
+Using [react-icons](https://github.com/react-icons/react-icons) for the icons
