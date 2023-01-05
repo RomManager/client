@@ -4,7 +4,7 @@ type Props = {
   placeholder: string
 }
 
-const InputBox: React.FC<Props> = props => {
+const BoxInput: React.FC<Props> = props => {
   const { placeholder } = props
 
   return (
@@ -15,4 +15,4 @@ const InputBox: React.FC<Props> = props => {
   )
 }
 
-export default InputBox
+export default BoxInput
