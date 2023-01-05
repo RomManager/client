@@ -1,11 +1,10 @@
+import GradientFullPageLite from '@components/pageTemplates/GradientFullPageLite'
 import React from 'react'
-
-import { Link } from 'react-router-dom'
 
 export default function TestPage() {
   return (
-    <div>
-      <Link to="/">Go Back</Link>
-    </div>
+    <GradientFullPageLite>
+      <p>Test</p>
+    </GradientFullPageLite>
   )
 }

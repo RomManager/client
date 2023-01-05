@@ -17,7 +17,7 @@ export async function loginAPICall({
       return false
     }
 
-    console.log('This is the JWT token: ' + data.token)
+    // TODO: Store the token locally
     axios.defaults.headers.common['Authorization'] = 'Bearer ' + data.token
 
     return true

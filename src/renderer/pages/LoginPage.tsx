@@ -1,3 +1,4 @@
+import GradientFullPage from '@components/pageTemplates/GradientFullPage'
 import BoxButton from '@components/utils/BoxButton'
 import BoxInput from '@components/utils/BoxInput'
 import { useAppDispatch, useAppSelector } from '@renderer/state/hooks'
@@ -22,7 +23,7 @@ const LoginPage = () => {
   }, [isAuthenticated, navigate])
 
   return (
-    <div className="bg-gradient-to-tr from-blue-0 to-pink-0 h-screen place-content-center flex">
+    <GradientFullPage className="place-content-center">
       <div className="bg-gray-1 py-6 pb-12 flex rounded-lg shadow-2xl flex-col h-64 mt-72">
         <h1 className="text-center font-sans font-extrabold text-2xl text-white">
           RomManager
@@ -48,7 +49,7 @@ const LoginPage = () => {
           />
         </div>
       </div>
-    </div>
+    </GradientFullPage>
   )
 }
 
