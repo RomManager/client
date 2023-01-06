@@ -4,6 +4,7 @@ import { useAppDispatch } from '@renderer/state/hooks'
 import { setCurrentPage } from '@renderer/state/slicers/ui/uiSlice'
 import React, { useEffect } from 'react'
 
+// Simply testing navigations
 export default function TestPage2() {
   const dispatch = useAppDispatch()
 
