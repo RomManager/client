@@ -2,6 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.test-nunito {
-  font-family: 'Nunito Sans';
+::selection {
+  background: #d21b59;
 }
