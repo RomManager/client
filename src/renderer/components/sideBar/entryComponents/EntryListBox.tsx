@@ -13,16 +13,16 @@ const EntryListBox: React.FC<EntrylistBoxProps> = ({ entryName, itemList }) => {
   return (
     <div className="mt-3 mx-4 flex flex-col">
       <div className="flex flex-row justify-between">
-        <span className="text-gray-7 font-sans font-extrabold text-xs uppercase tracking-wider">
+        <span className="text-gray-7 font-sans font-bold text-xs uppercase tracking-wider">
           {entryName}
         </span>
-        <div
+        <button
           onClick={() => setIsOpen(!isOpen)}
           className={`${isOpen ? `rotate-0 ` : `rotate-180 `}
         text-gray-7 ease-in-out  hover:scale-125 duration-300 hover:cursor-pointer text-base`}
         >
           <IoChevronUp />
-        </div>
+        </button>
       </div>
       {isOpen && (
         // TODO: Create animation when opening/closing
