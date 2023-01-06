@@ -1,12 +1,14 @@
 import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit'
 import counterSlice from './slicers/counterSlice'
 import userSlice from './slicers/user/userSlice'
+import uiSlice from './slicers/ui/uiSlice'
 // ...
 
 export const store = configureStore({
   reducer: {
     counter: counterSlice,
     user: userSlice,
+    ui: uiSlice,
   },
   devTools: true,
 })

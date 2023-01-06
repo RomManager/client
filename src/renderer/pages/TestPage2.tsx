@@ -4,18 +4,19 @@ import { useAppDispatch } from '@renderer/state/hooks'
 import { setCurrentPage } from '@renderer/state/slicers/ui/uiSlice'
 import React, { useEffect } from 'react'
 
-export default function TestPage() {
+// Simply testing navigations
+export default function TestPage2() {
   const dispatch = useAppDispatch()
 
   useEffect(() => {
     // Set current page for the sidebar
-    dispatch(setCurrentPage('/test'))
+    dispatch(setCurrentPage('/test2'))
   })
 
   return (
     <GradientFullPageLite>
       <ConfiguredSideBar />
-      <p>Test</p>
+      <p>Test2</p>
     </GradientFullPageLite>
   )
 }
