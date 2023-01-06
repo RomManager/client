@@ -1,6 +1,6 @@
 import BoxInput from '@components/utils/BoxInput'
 import React from 'react'
-import EntryListBox, { EntrylistBoxProps } from './EntryListBox'
+import EntryListBox, { EntrylistBoxProps } from './entryComponents/EntryListBox'
 
 type SideBarProps = {
   entryBoxes: Array<EntrylistBoxProps>

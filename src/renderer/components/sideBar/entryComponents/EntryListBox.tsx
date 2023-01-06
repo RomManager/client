@@ -27,9 +27,9 @@ const EntryListBox: React.FC<EntrylistBoxProps> = ({ entryName, itemList }) => {
       {isOpen && (
         // TODO: Create animation when opening/closing
         <div className={`mt-2`}>
-          {itemList.map(item => (
+          {itemList.map((item, index) => (
             <EntryItem
-              key={item.linkTo}
+              key={index}
               itemName={item.itemName}
               linkTo={item.linkTo}
             />
