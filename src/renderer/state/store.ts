@@ -2,6 +2,7 @@ import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit'
 import counterSlice from './slicers/counterSlice'
 import userSlice from './slicers/user/userSlice'
 import uiSlice from './slicers/ui/uiSlice'
+import dataSlice from './slicers/data/dataSlice'
 // ...
 
 export const store = configureStore({
@@ -9,6 +10,7 @@ export const store = configureStore({
     counter: counterSlice,
     user: userSlice,
     ui: uiSlice,
+    data: dataSlice,
   },
   devTools: true,
 })
