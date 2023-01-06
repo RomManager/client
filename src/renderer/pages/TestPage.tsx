@@ -5,7 +5,24 @@ import React from 'react'
 export default function TestPage() {
   return (
     <GradientFullPageLite>
-      <SideBar />
+      <SideBar
+        entryBoxes={[
+          {
+            entryName: 'Emulator Galaxy',
+            itemList: [
+              { itemName: 'Discover', linkTo: '/' },
+              { itemName: 'Home', linkTo: '/' },
+            ],
+          },
+          {
+            entryName: 'Games',
+            itemList: [
+              { itemName: 'All Games', linkTo: '/' },
+              { itemName: 'Installed', linkTo: '/' },
+            ],
+          },
+        ]}
+      />
       <p>Test</p>
     </GradientFullPageLite>
   )
