@@ -13,7 +13,7 @@ const EntryListBox: React.FC<EntrylistBoxProps> = ({ entryName, itemList }) => {
   return (
     <div className="mt-3 mx-4 flex flex-col">
       <div className="flex flex-row justify-between">
-        <span className="text-gray-7 font-sans font-extrabold text-xs uppercase tracking-wider">
+        <span className="text-gray-7 font-sans font-bold text-xs uppercase tracking-wider">
           {entryName}
         </span>
         <button
