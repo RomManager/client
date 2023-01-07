@@ -25,7 +25,7 @@ export default function AllGamesPage() {
           {status == 'loading' || games.length == 0 ? (
             <p>Loading</p>
           ) : (
-            <GameGrid game={games[0]} />
+            <GameGrid game={games[1]} />
           )}
         </div>
       </div>
