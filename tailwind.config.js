@@ -52,7 +52,6 @@ module.exports = {
       },
       fontFamily: {
         sans: ['Nunito Sans', ...defaultTheme.fontFamily.sans],
-        valle: ['Nunito Sans'],
       },
     },
   },

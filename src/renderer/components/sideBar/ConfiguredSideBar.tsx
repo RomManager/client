@@ -15,7 +15,7 @@ const ConfiguredSideBar: React.FC = () => {
         {
           entryName: 'Games',
           itemList: [
-            { itemName: 'All Games', linkTo: '/' },
+            { itemName: 'All Games', linkTo: '/all_games' },
             { itemName: 'Installed', linkTo: '/' },
           ],
         },

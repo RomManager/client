@@ -13,6 +13,7 @@ import WelcomePage from '@pages/WelcomePage'
 import TestPage from '@pages/TestPage'
 import LoginPage from './pages/LoginPage'
 import TestPage2 from './pages/TestPage2'
+import AllGamesPage from './pages/AllGamesPage'
 
 const Application: React.FC = () => {
   /* Set default axios base URL */
@@ -25,6 +26,7 @@ const Application: React.FC = () => {
           <Route path="/" element={<WelcomePage />} />
           <Route path="/test" element={<TestPage />} />
           <Route path="/test2" element={<TestPage2 />} />
+          <Route path="/all_games" element={<AllGamesPage />} />
           <Route path="/login" element={<LoginPage />} />
         </Routes>
       </HashRouter>
