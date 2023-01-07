@@ -3,9 +3,9 @@ import { getAllRomsAPICall } from './dataAPI'
 import { RootState } from '@renderer/state/store'
 
 export type Rom = {
+  id: number
   romName: string
   emulator: string
-  gridUrl: string
   releaseDate: Date
 }
 

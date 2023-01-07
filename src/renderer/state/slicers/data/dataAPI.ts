@@ -3,7 +3,6 @@ import { Rom } from './dataSlice'
 
 type RomResponse = {
   emulator: string
-  grid_url: string
   id: number
   name: string
   release_date: Date
@@ -17,8 +16,8 @@ export async function getAllRomsAPICall(): Promise<Array<Rom>> {
 
     data.data.map(rom => {
       newData.push({
+        id: rom.id,
         emulator: rom.emulator,
-        gridUrl: rom.grid_url,
         romName: rom.name,
         releaseDate: rom.release_date,
       })
