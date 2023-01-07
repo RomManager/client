@@ -21,7 +21,7 @@ const PageWithSideBar: React.FC<{
   return (
     <GradientFullPageLite>
       <ConfiguredSideBar />
-      {children}
+      <div className="w-screen">{children}</div>
     </GradientFullPageLite>
   )
 }

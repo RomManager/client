@@ -41,5 +41,5 @@ export const dataSlice = createSlice({
 })
 
 export const selectAllRoms = (state: RootState) => state.data.allRoms
-
+export const selectDataStatus = (state: RootState) => state.data.status
 export default dataSlice.reducer
