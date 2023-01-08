@@ -3,7 +3,7 @@ import axios from 'axios'
 import React, { useState } from 'react'
 
 const GameGrid: React.FC<{ game: Rom }> = ({ game }) => {
-  const { id, emulator, releaseDate, romName } = game
+  const { id, emulator, romName } = game
 
   const [isHovering, setIsHovering] = useState(false)
 
@@ -11,12 +11,14 @@ const GameGrid: React.FC<{ game: Rom }> = ({ game }) => {
     <button
       onMouseEnter={() => setIsHovering(true)}
       onMouseLeave={() => setIsHovering(false)}
-      className="w-44 shadow-xl rounded-lg hover:cursor-pointer hover:shadow-none focus:outline-none text-center relative bg-gray-0"
+      className="w-44 h-[264px] shadow-lg rounded-lg hover:cursor-pointer hover:shadow-none focus:outline-none text-center relative bg-gray-0"
     >
       <img
         src={`${axios.defaults.baseURL}/rom/${id}/grid`}
         alt={romName}
-        className="hover:opacity-40 rounded-lg"
+        className={`${
+          isHovering ? 'opacity-40' : 'opacity-100'
+        } rounded-lg w-44 h-[264px]`}
       />
       <div
         className={`${

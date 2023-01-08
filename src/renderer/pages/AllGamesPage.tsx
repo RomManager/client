@@ -1,4 +1,5 @@
 import GameGrid from '@components/game/GameGrid'
+import GameList from '@components/game/GameList'
 import PageWithSideBar from '@components/pageTemplates/PageWithSideBar'
 import { useAppDispatch, useAppSelector } from '@renderer/state/hooks'
 import {
@@ -21,13 +22,11 @@ export default function AllGamesPage() {
   return (
     <PageWithSideBar pageLink="/all_games">
       <div className="">
-        <div className="m-10">
-          {status == 'loading' || games.length == 0 ? (
-            <p>Loading</p>
-          ) : (
-            <GameGrid game={games[1]} />
-          )}
-        </div>
+        {status == 'loading' || games.length == 0 ? (
+          <p>Loading</p>
+        ) : (
+          <GameList games={games} />
+        )}
       </div>
     </PageWithSideBar>
   )
