@@ -8,14 +8,14 @@ import React, { useEffect } from 'react'
 	Default Page Component for all pages connected with the sidebar
 */
 const PageWithSideBar: React.FC<{
-  pageLink: string
+  pageLink?: string
   children: React.ReactNode
 }> = ({ pageLink, children }) => {
   const dispatch = useAppDispatch()
 
   useEffect(() => {
-    // Set current page for the sidebar
-    dispatch(setCurrentPage(pageLink))
+    // Set current page for the sidebar if pageLink is given
+    pageLink && dispatch(setCurrentPage(pageLink))
   })
 
   return (

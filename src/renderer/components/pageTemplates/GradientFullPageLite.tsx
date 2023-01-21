@@ -6,7 +6,9 @@ const GradientFullPageLite: React.FC<{
   className?: string
 }> = props => {
   return (
-    <div className={`bg-gradient-to-tr from-blue-0 to-pink-0 h-screen flex`}>
+    <div
+      className={`bg-gradient-to-tr from-blue-0 to-pink-0 h-screen flex overflow-hidden`}
+    >
       <div
         className={`bg-[#31313180] h-screen w-screen flex  ${
           props.className ? props.className : ''
