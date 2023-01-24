@@ -1,14 +1,17 @@
 import { Rom } from '@renderer/state/slicers/data/dataSlice'
 import axios from 'axios'
 import React, { useState } from 'react'
+import { useNavigate } from 'react-router'
 
 const GameGrid: React.FC<{ game: Rom }> = ({ game }) => {
+  const navigate = useNavigate()
   const { id, emulator, romName } = game
 
   const [isHovering, setIsHovering] = useState(false)
 
   return (
     <button
+      onClick={() => navigate(`/game`, { state: game })}
       onMouseEnter={() => setIsHovering(true)}
       onMouseLeave={() => setIsHovering(false)}
       className="w-44 h-[264px] shadow-lg rounded-lg hover:cursor-pointer hover:shadow-none focus:outline-none text-center relative bg-gray-0"

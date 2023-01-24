@@ -8,12 +8,13 @@ import axios from 'axios'
 // React Router
 import { HashRouter, Routes, Route } from 'react-router-dom'
 
-// Component
+// Pages
 import WelcomePage from '@pages/WelcomePage'
 import TestPage from '@pages/TestPage'
 import LoginPage from './pages/LoginPage'
 import TestPage2 from './pages/TestPage2'
 import AllGamesPage from './pages/AllGamesPage'
+import GamePage from './pages/GamePage'
 
 const Application: React.FC = () => {
   /* Set default axios base URL */
@@ -27,6 +28,7 @@ const Application: React.FC = () => {
           <Route path="/test" element={<TestPage />} />
           <Route path="/test2" element={<TestPage2 />} />
           <Route path="/all_games" element={<AllGamesPage />} />
+          <Route path="/game" element={<GamePage />} />
           <Route path="/login" element={<LoginPage />} />
         </Routes>
       </HashRouter>
