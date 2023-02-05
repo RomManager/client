@@ -6,6 +6,13 @@ To use pre commit prettier check etc:
 npm i
 ```
 
+### Developing on macOS
+
+#### Possible issues
+
+- Getting redirects or any other cache errors?
+  - Delete the folder at `/Users/Yourname/Library/Application Support/AppName`
+
 ### Code style conventions
 
 -- to be improved --
