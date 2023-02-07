@@ -5,12 +5,13 @@
   "description": "Client for RomManager",
   "main": ".webpack/main",
   "scripts": {
-    "start": "eslint . && cross-env NODE_ENV=development electron-forge start",
+    "dev": "eslint . && cross-env NODE_ENV=development electron-forge start",
     "package": "electron-forge package",
     "make": "electron-forge make",
     "publish": "electron-forge publish",
     "prepare": "husky install",
-    "lint": "eslint . && prettier --check ."
+    "lint": "eslint . && prettier --check .",
+    "preinstall": "npx only-allow pnpm"
   },
   "config": {
     "forge": "./tools/forge/forge.config.js"
