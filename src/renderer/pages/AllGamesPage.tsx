@@ -1,6 +1,7 @@
 import GameGrid from '@components/game/GameGrid'
 import GameList from '@components/game/GameList'
 import PageWithSideBar from '@components/pageTemplates/PageWithSideBar'
+import TopBar from '@components/topBar/TopBar'
 import { useAppDispatch, useAppSelector } from '@renderer/state/hooks'
 import {
   getAllRomsAsync,
@@ -21,6 +22,7 @@ export default function AllGamesPage() {
 
   return (
     <PageWithSideBar pageLink="/all_games">
+      <TopBar />
       <div className="">
         {status == 'loading' || games.length == 0 ? (
           <p>Loading</p>
