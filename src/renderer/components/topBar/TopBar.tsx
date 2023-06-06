@@ -6,7 +6,7 @@ import {
   IoPersonCircleOutline,
   IoSettingsOutline,
 } from 'react-icons/io5'
-import BoxInput from '@components/utils/BoxInput'
+import * as DropdownMenu from '@radix-ui/react-dropdown-menu'
 
 const TopBar: React.FC = () => {
   return (
@@ -20,12 +20,27 @@ const TopBar: React.FC = () => {
             <IoChevronForwardOutline />
           </button>
         </div>
-        <button className="mx-2 text-gray-8 text-lg flex flex-row bg-gray-10 bg-opacity-10 rounded-md px-2 hover:text-gray-9">
-          <div className="pt-[5px]">
-            <IoFilterOutline />
-          </div>
-          <span className="pt-[3px] text-base pl-2 font-sans">Filter</span>
-        </button>
+        <div className="pt-[5px]">
+          <DropdownMenu.Root>
+            <DropdownMenu.Trigger>
+              <button
+                className="mx-2 text-gray-8 text-lg flex flex-row bg-gray-10 bg-opacity-10 rounded-md px-2 hover:text-gray-9"
+                aria-label="Filter"
+              >
+                <IoFilterOutline />
+                <span className="pt-[3px] text-base pl-2 font-sans">
+                  Filter
+                </span>
+              </button>
+            </DropdownMenu.Trigger>
+
+            <DropdownMenu.Portal>
+              <DropdownMenu.Content sideOffset={5}>
+                <DropdownMenu.Item>test</DropdownMenu.Item>
+              </DropdownMenu.Content>
+            </DropdownMenu.Portal>
+          </DropdownMenu.Root>
+        </div>
         <input
           className="bg-gray-10 bg-opacity-10 rounded-md px-2 text-gray-9 placeholder-gray-7 focus:outline-none w-48"
           placeholder="Search"
